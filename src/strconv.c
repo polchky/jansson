@@ -35,12 +35,13 @@ static void to_locale(strbuffer_t *strbuffer)
 {
     const char *point;
     char *pos;
-
+    return;
+    /**
     point = localeconv()->decimal_point;
     if(*point == '.') {
-        /* No conversion needed */
+        / No conversion needed /
         return;
-    }
+    }**/
 
     pos = strchr(strbuffer->value, '.');
     if(pos)
@@ -51,12 +52,14 @@ static void from_locale(char *buffer)
 {
     const char *point;
     char *pos;
-
+    return;
+    /**
     point = localeconv()->decimal_point;
     if(*point == '.') {
-        /* No conversion needed */
+        / No conversion needed /
         return;
     }
+    **/
 
     pos = strchr(buffer, *point);
     if(pos)
@@ -75,7 +78,7 @@ int jsonp_strtod(strbuffer_t *strbuffer, double *out)
 
     errno = 0;
     value = strtod(strbuffer->value, &end);
-    assert(end == strbuffer->value + strbuffer->length);
+    //assert(end == strbuffer->value + strbuffer->length);
 
     if((value == HUGE_VAL || value == -HUGE_VAL) && errno == ERANGE) {
         /* Overflow */

@@ -1,0 +1,90 @@
+make  all-recursive
+make[1]: Entering directory '/home/gremaupa/Desktop/jansson'
+Making all in doc
+make[2]: Entering directory '/home/gremaupa/Desktop/jansson/doc'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/gremaupa/Desktop/jansson/doc'
+Making all in src
+make[2]: Entering directory '/home/gremaupa/Desktop/jansson/src'
+/bin/bash ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..    -Wall -Wextra -Wdeclaration-after-statement -g -O2 -MT dump.lo -MD -MP -MF .deps/dump.Tpo -c -o dump.lo dump.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -Wall -Wextra -Wdeclaration-after-statement -g -O2 -MT dump.lo -MD -MP -MF .deps/dump.Tpo -c dump.c  -fPIC -DPIC -o .libs/dump.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -Wall -Wextra -Wdeclaration-after-statement -g -O2 -MT dump.lo -MD -MP -MF .deps/dump.Tpo -c dump.c -o dump.o >/dev/null 2>&1
+mv -f .deps/dump.Tpo .deps/dump.Plo
+/bin/bash ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..    -Wall -Wextra -Wdeclaration-after-statement -g -O2 -MT error.lo -MD -MP -MF .deps/error.Tpo -c -o error.lo error.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -Wall -Wextra -Wdeclaration-after-statement -g -O2 -MT error.lo -MD -MP -MF .deps/error.Tpo -c error.c  -fPIC -DPIC -o .libs/error.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -Wall -Wextra -Wdeclaration-after-statement -g -O2 -MT error.lo -MD -MP -MF .deps/error.Tpo -c error.c -o error.o >/dev/null 2>&1
+mv -f .deps/error.Tpo .deps/error.Plo
+/bin/bash ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..    -Wall -Wextra -Wdeclaration-after-statement -g -O2 -MT hashtable.lo -MD -MP -MF .deps/hashtable.Tpo -c -o hashtable.lo hashtable.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -Wall -Wextra -Wdeclaration-after-statement -g -O2 -MT hashtable.lo -MD -MP -MF .deps/hashtable.Tpo -c hashtable.c  -fPIC -DPIC -o .libs/hashtable.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -Wall -Wextra -Wdeclaration-after-statement -g -O2 -MT hashtable.lo -MD -MP -MF .deps/hashtable.Tpo -c hashtable.c -o hashtable.o >/dev/null 2>&1
+mv -f .deps/hashtable.Tpo .deps/hashtable.Plo
+/bin/bash ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..    -Wall -Wextra -Wdeclaration-after-statement -g -O2 -MT hashtable_seed.lo -MD -MP -MF .deps/hashtable_seed.Tpo -c -o hashtable_seed.lo hashtable_seed.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -Wall -Wextra -Wdeclaration-after-statement -g -O2 -MT hashtable_seed.lo -MD -MP -MF .deps/hashtable_seed.Tpo -c hashtable_seed.c  -fPIC -DPIC -o .libs/hashtable_seed.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -Wall -Wextra -Wdeclaration-after-statement -g -O2 -MT hashtable_seed.lo -MD -MP -MF .deps/hashtable_seed.Tpo -c hashtable_seed.c -o hashtable_seed.o >/dev/null 2>&1
+mv -f .deps/hashtable_seed.Tpo .deps/hashtable_seed.Plo
+/bin/bash ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..    -Wall -Wextra -Wdeclaration-after-statement -g -O2 -MT load.lo -MD -MP -MF .deps/load.Tpo -c -o load.lo load.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -Wall -Wextra -Wdeclaration-after-statement -g -O2 -MT load.lo -MD -MP -MF .deps/load.Tpo -c load.c  -fPIC -DPIC -o .libs/load.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -Wall -Wextra -Wdeclaration-after-statement -g -O2 -MT load.lo -MD -MP -MF .deps/load.Tpo -c load.c -o load.o >/dev/null 2>&1
+mv -f .deps/load.Tpo .deps/load.Plo
+/bin/bash ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..    -Wall -Wextra -Wdeclaration-after-statement -g -O2 -MT memory.lo -MD -MP -MF .deps/memory.Tpo -c -o memory.lo memory.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -Wall -Wextra -Wdeclaration-after-statement -g -O2 -MT memory.lo -MD -MP -MF .deps/memory.Tpo -c memory.c  -fPIC -DPIC -o .libs/memory.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -Wall -Wextra -Wdeclaration-after-statement -g -O2 -MT memory.lo -MD -MP -MF .deps/memory.Tpo -c memory.c -o memory.o >/dev/null 2>&1
+mv -f .deps/memory.Tpo .deps/memory.Plo
+/bin/bash ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..    -Wall -Wextra -Wdeclaration-after-statement -g -O2 -MT pack_unpack.lo -MD -MP -MF .deps/pack_unpack.Tpo -c -o pack_unpack.lo pack_unpack.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -Wall -Wextra -Wdeclaration-after-statement -g -O2 -MT pack_unpack.lo -MD -MP -MF .deps/pack_unpack.Tpo -c pack_unpack.c  -fPIC -DPIC -o .libs/pack_unpack.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -Wall -Wextra -Wdeclaration-after-statement -g -O2 -MT pack_unpack.lo -MD -MP -MF .deps/pack_unpack.Tpo -c pack_unpack.c -o pack_unpack.o >/dev/null 2>&1
+mv -f .deps/pack_unpack.Tpo .deps/pack_unpack.Plo
+/bin/bash ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..    -Wall -Wextra -Wdeclaration-after-statement -g -O2 -MT strbuffer.lo -MD -MP -MF .deps/strbuffer.Tpo -c -o strbuffer.lo strbuffer.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -Wall -Wextra -Wdeclaration-after-statement -g -O2 -MT strbuffer.lo -MD -MP -MF .deps/strbuffer.Tpo -c strbuffer.c  -fPIC -DPIC -o .libs/strbuffer.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -Wall -Wextra -Wdeclaration-after-statement -g -O2 -MT strbuffer.lo -MD -MP -MF .deps/strbuffer.Tpo -c strbuffer.c -o strbuffer.o >/dev/null 2>&1
+mv -f .deps/strbuffer.Tpo .deps/strbuffer.Plo
+/bin/bash ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..    -Wall -Wextra -Wdeclaration-after-statement -g -O2 -MT strconv.lo -MD -MP -MF .deps/strconv.Tpo -c -o strconv.lo strconv.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -Wall -Wextra -Wdeclaration-after-statement -g -O2 -MT strconv.lo -MD -MP -MF .deps/strconv.Tpo -c strconv.c  -fPIC -DPIC -o .libs/strconv.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -Wall -Wextra -Wdeclaration-after-statement -g -O2 -MT strconv.lo -MD -MP -MF .deps/strconv.Tpo -c strconv.c -o strconv.o >/dev/null 2>&1
+mv -f .deps/strconv.Tpo .deps/strconv.Plo
+/bin/bash ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..    -Wall -Wextra -Wdeclaration-after-statement -g -O2 -MT utf.lo -MD -MP -MF .deps/utf.Tpo -c -o utf.lo utf.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -Wall -Wextra -Wdeclaration-after-statement -g -O2 -MT utf.lo -MD -MP -MF .deps/utf.Tpo -c utf.c  -fPIC -DPIC -o .libs/utf.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -Wall -Wextra -Wdeclaration-after-statement -g -O2 -MT utf.lo -MD -MP -MF .deps/utf.Tpo -c utf.c -o utf.o >/dev/null 2>&1
+mv -f .deps/utf.Tpo .deps/utf.Plo
+/bin/bash ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..    -Wall -Wextra -Wdeclaration-after-statement -g -O2 -MT value.lo -MD -MP -MF .deps/value.Tpo -c -o value.lo value.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -Wall -Wextra -Wdeclaration-after-statement -g -O2 -MT value.lo -MD -MP -MF .deps/value.Tpo -c value.c  -fPIC -DPIC -o .libs/value.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -Wall -Wextra -Wdeclaration-after-statement -g -O2 -MT value.lo -MD -MP -MF .deps/value.Tpo -c value.c -o value.o >/dev/null 2>&1
+mv -f .deps/value.Tpo .deps/value.Plo
+/bin/bash ../libtool  --tag=CC   --mode=link gcc -Wall -Wextra -Wdeclaration-after-statement -g -O2 -no-undefined -export-symbols-regex '^json_' -version-info 15:0:11  -o libjansson.la -rpath /usr/local/lib dump.lo error.lo hashtable.lo hashtable_seed.lo load.lo memory.lo pack_unpack.lo strbuffer.lo strconv.lo utf.lo value.lo
+libtool: link: /usr/bin/nm -B  .libs/dump.o .libs/error.o .libs/hashtable.o .libs/hashtable_seed.o .libs/load.o .libs/memory.o .libs/pack_unpack.o .libs/strbuffer.o .libs/strconv.o .libs/utf.o .libs/value.o   | sed -n -e 's/^.*[	 ]\([ABCDGIRSTW][ABCDGIRSTW]*\)[	 ][	 ]*\([_A-Za-z][_A-Za-z0-9]*\)$/\1 \2 \2/p' | sed '/ __gnu_lto/d' | /bin/sed 's/.* //' | sort | uniq > .libs/libjansson.exp
+libtool: link: /bin/grep -E -e "^json_" ".libs/libjansson.exp" > ".libs/libjansson.expT"
+libtool: link: mv -f ".libs/libjansson.expT" ".libs/libjansson.exp"
+libtool: link: echo "{ global:" > .libs/libjansson.ver
+libtool: link:  cat .libs/libjansson.exp | sed -e "s/\(.*\)/\1;/" >> .libs/libjansson.ver
+libtool: link:  echo "local: *; };" >> .libs/libjansson.ver
+libtool: link:  gcc -shared  -fPIC -DPIC  .libs/dump.o .libs/error.o .libs/hashtable.o .libs/hashtable_seed.o .libs/load.o .libs/memory.o .libs/pack_unpack.o .libs/strbuffer.o .libs/strconv.o .libs/utf.o .libs/value.o    -g -O2   -Wl,-soname -Wl,libjansson.so.4 -Wl,-version-script -Wl,.libs/libjansson.ver -o .libs/libjansson.so.4.11.0
+libtool: link: (cd ".libs" && rm -f "libjansson.so.4" && ln -s "libjansson.so.4.11.0" "libjansson.so.4")
+libtool: link: (cd ".libs" && rm -f "libjansson.so" && ln -s "libjansson.so.4.11.0" "libjansson.so")
+libtool: link: ar cru .libs/libjansson.a  .libs/dump.o .libs/error.o .libs/hashtable.o .libs/hashtable_seed.o .libs/load.o .libs/memory.o .libs/pack_unpack.o .libs/strbuffer.o .libs/strconv.o .libs/utf.o .libs/value.o
+ar: `u' modifier ignored since `D' is the default (see `U')
+libtool: link: ranlib .libs/libjansson.a
+libtool: link: ( cd ".libs" && rm -f "libjansson.la" && ln -s "../libjansson.la" "libjansson.la" )
+make[2]: Leaving directory '/home/gremaupa/Desktop/jansson/src'
+Making all in test
+make[2]: Entering directory '/home/gremaupa/Desktop/jansson/test'
+Making all in bin
+make[3]: Entering directory '/home/gremaupa/Desktop/jansson/test/bin'
+make[3]: Nothing to be done for 'all'.
+make[3]: Leaving directory '/home/gremaupa/Desktop/jansson/test/bin'
+Making all in suites
+make[3]: Entering directory '/home/gremaupa/Desktop/jansson/test/suites'
+Making all in api
+make[4]: Entering directory '/home/gremaupa/Desktop/jansson/test/suites/api'
+make[4]: Nothing to be done for 'all'.
+make[4]: Leaving directory '/home/gremaupa/Desktop/jansson/test/suites/api'
+make[4]: Entering directory '/home/gremaupa/Desktop/jansson/test/suites'
+make[4]: Nothing to be done for 'all-am'.
+make[4]: Leaving directory '/home/gremaupa/Desktop/jansson/test/suites'
+make[3]: Leaving directory '/home/gremaupa/Desktop/jansson/test/suites'
+make[3]: Entering directory '/home/gremaupa/Desktop/jansson/test'
+make[3]: Nothing to be done for 'all-am'.
+make[3]: Leaving directory '/home/gremaupa/Desktop/jansson/test'
+make[2]: Leaving directory '/home/gremaupa/Desktop/jansson/test'
+make[2]: Entering directory '/home/gremaupa/Desktop/jansson'
+make[2]: Leaving directory '/home/gremaupa/Desktop/jansson'
+make[1]: Leaving directory '/home/gremaupa/Desktop/jansson'

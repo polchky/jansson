@@ -186,7 +186,7 @@ static int stream_get(stream_t *stream, json_error_t *error)
             if(!count)
                 goto out;
 
-            assert(count >= 2);
+            //removed assert(count >= 2);
 
             for(i = 1; i < count; i++)
                 stream->buffer[i] = stream->get(stream->data);
@@ -235,9 +235,9 @@ static void stream_unget(stream_t *stream, int c)
     else if(utf8_check_first(c))
         stream->column--;
 
-    assert(stream->buffer_pos > 0);
+    //removed assert(stream->buffer_pos > 0);
     stream->buffer_pos--;
-    assert(stream->buffer[stream->buffer_pos] == c);
+    //removed assert(stream->buffer[stream->buffer_pos] == c);
 }
 
 
@@ -279,7 +279,7 @@ static void lex_unget_unsave(lex_t *lex, int c)
         d =
         #endif
             strbuffer_pop(&lex->saved_text);
-        assert(c == d);
+        //removed assert(c == d);
     }
 }
 
@@ -306,7 +306,7 @@ static int32_t decode_unicode_escape(const char *str)
     int i;
     int32_t value = 0;
 
-    assert(str[0] == 'u');
+    //removed assert(str[0] == 'u');
 
     for(i = 1; i <= 4; i++) {
         char c = str[i];
@@ -448,8 +448,8 @@ static void lex_scan_string(lex_t *lex, json_error_t *error)
                     goto out;
                 }
 
-                if(utf8_encode(value, t, &length))
-                    assert(0);
+                //removed if(utf8_encode(value, t, &length))
+                //removed    assert(0);
                 t += length;
             }
             else {
@@ -461,7 +461,7 @@ static void lex_scan_string(lex_t *lex, json_error_t *error)
                     case 'n': *t = '\n'; break;
                     case 'r': *t = '\r'; break;
                     case 't': *t = '\t'; break;
-                    default: assert(0);
+                    default: break;//removed assert(0);
                 }
                 t++;
                 p++;
@@ -538,7 +538,7 @@ static int lex_scan_number(lex_t *lex, int c, json_error_t *error)
             goto out;
         }
 
-        assert(end == saved_text + lex->saved_text.length);
+        //removed assert(end == saved_text + lex->saved_text.length);
 
         lex->token = TOKEN_INTEGER;
         lex->value.integer = intval;
@@ -1010,21 +1010,22 @@ json_t *json_loadf(FILE *input, size_t flags, json_error_t *error)
     lex_t lex;
     const char *source;
     json_t *result;
-
+/**
     if(input == stdin)
         source = "<stdin>";
     else
         source = "<stream>";
-
+**/
     jsonp_error_init(error, source);
 
     if (input == NULL) {
         error_set(error, NULL, json_error_invalid_argument, "wrong arguments");
         return NULL;
     }
-
+/**
     if(lex_init(&lex, (get_func)fgetc, flags, input))
         return NULL;
+        **/
 
     result = parse_json(&lex, flags, error);
 
@@ -1035,10 +1036,12 @@ json_t *json_loadf(FILE *input, size_t flags, json_error_t *error)
 static int fd_get_func(int *fd)
 {
     uint8_t c;
+    /**
 #ifdef HAVE_UNISTD_H
     if (read(*fd, &c, 1) == 1)
         return c;
 #endif
+**/
     return EOF;
 }
 
@@ -1083,7 +1086,7 @@ json_t *json_load_file(const char *path, size_t flags, json_error_t *error)
         return NULL;
     }
 
-    fp = fopen(path, "rb");
+    //fp = fopen(path, "rb");
     if(!fp)
     {
         error_set(error, NULL, json_error_cannot_open_file, "unable to open %s: %s",
@@ -1093,7 +1096,7 @@ json_t *json_load_file(const char *path, size_t flags, json_error_t *error)
 
     result = json_loadf(fp, flags, error);
 
-    fclose(fp);
+    //fclose(fp);
     return result;
 }
 
